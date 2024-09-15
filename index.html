@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Signature App</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Customize Your Signature</h2>
+            <div class="top">
+                <div class="block">
+                    <p>Text Color</p>
+                    <input class="form-control" type="color" id="colorPicker">
+                </div>
+                <div class="block">
+                    <p>Background Color</p>
+                    <input class="form-control" type="color" id="canvasColor">
+                </div>
+                <div class="block">
+                    <p>Font Size</p>
+                    <select class="custom-select" id="fontSizePicker">
+                        <option value="5">5px</option>
+                        <option value="10">10px</option>
+                        <option value="20">20px</option>
+                        <option value="30">30px</option>
+                        <option value="40">40px</option>
+                        <option value="50">50px</option>
+                    </select>
+                </div>
+            </div>
+            <canvas class="canvas" id="myCanvas" width="800" height="500"></canvas>
+            <div class="bottom">
+                <button type="button" class="btn btn-danger" id="clearButton">Clear</button>
+                <button type="button" class="btn btn-success" id="saveButton">Save & Download</button>
+                <button type="button" class="btn btn-warning" id="retrieveButton">Retrieve Signature</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
